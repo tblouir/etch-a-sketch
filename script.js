@@ -20,7 +20,7 @@ function makeSquares(number) {
 
 
 inputSubmit.addEventListener('click', (e) => {
-    if (Number.isInteger(parseInt((input.value))) && input.value <= 100 && input.value > 0) {
+    if (Number.isInteger(parseFloat((input.value))) && input.value <= 100 && input.value > 0) {
         while (container.hasChildNodes()) {
             container.removeChild(container.lastChild)
         }
@@ -33,7 +33,7 @@ inputSubmit.addEventListener('click', (e) => {
 input.addEventListener('keydown', (e) => {
     console.log(e);
     if (e.key === 'Enter') {
-        if (Number.isInteger(parseInt((input.value))) && input.value <= 100 && input.value > 0) {
+        if (Number.isInteger(parseFloat((input.value))) && input.value <= 100 && input.value > 0) {
             while (container.hasChildNodes()) {
                 container.removeChild(container.lastChild)
             }
