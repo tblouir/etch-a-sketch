@@ -1,0 +1,31 @@
+body {
+    margin: 16px;
+    height: 90vh;
+    background-color: rgb(177, 172, 172);
+}
+
+#container {
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.button-container {
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
+.square {
+    background-color: black;
+    gap: 16px;
+    transition: background-color 0.8s;
+    width: 25%;
+    height: 50%;
+}
+
+.square:hover {
+    background-color: teal;
+}
+
